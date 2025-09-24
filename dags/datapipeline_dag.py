@@ -142,8 +142,6 @@ with DAG(
         python_callable=monitor_pipeline
     )
 
-
-
     export_csv_task = PythonOperator(
         task_id="export_gold_csv",
         python_callable=export_gold_to_csv,

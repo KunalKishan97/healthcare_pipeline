@@ -1,0 +1,7 @@
+medallion_profile:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: /opt/airflow/Healthcare_pipeline/data/medallion.duckdb
+      schema: raw  # or main, depending on your tables

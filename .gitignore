@@ -1,0 +1,10 @@
+*.pyc
+__pycache__/
+data/medallion.duckdb
+.env
+ .venv/
+venv/
+.idea/
+.vscode/
+target/        # dbt target
+dbt_modules/

@@ -1,0 +1,20 @@
+name: 'medallion_pipeline'
+version: '1.0'
+config-version: 2
+
+profile: medallion_profile
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+models:
+  medallion_pipeline:
+    raw:
+      +schema: raw
+      +materialized: view
+    curated:
+      +schema: curated
+      +materialized: incremental
+    analytic:
+      +schema: analytic
+      +materialized: table
